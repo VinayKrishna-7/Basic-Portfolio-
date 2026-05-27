@@ -17,17 +17,6 @@ body{
     overflow-x:hidden;
 }
 
-/* Scrollbar */
-
-::-webkit-scrollbar{
-    width:8px;
-}
-
-::-webkit-scrollbar-thumb{
-    background:#38bdf8;
-    border-radius:10px;
-}
-
 /* Navbar */
 
 .navbar{
@@ -39,7 +28,6 @@ body{
     width:100%;
     top:0;
     z-index:1000;
-
     background:rgba(15,23,42,0.7);
     backdrop-filter:blur(10px);
 }
@@ -82,23 +70,6 @@ body{
     align-items:center;
     text-align:center;
     padding:120px 20px;
-    position:relative;
-}
-
-.hero::before{
-    content:'';
-    position:absolute;
-    width:500px;
-    height:500px;
-    background:#38bdf8;
-    filter:blur(180px);
-    opacity:0.15;
-    border-radius:50%;
-}
-
-.hero-content{
-    position:relative;
-    z-index:1;
 }
 
 .hero-content h1{
@@ -129,12 +100,13 @@ body{
     box-shadow:0 0 20px #38bdf8;
 }
 
-/* Social */
+/* Social Links */
 
 .social-icons{
     margin-top:30px;
     display:flex;
     justify-content:center;
+    flex-wrap:wrap;
     gap:20px;
 }
 
@@ -183,17 +155,10 @@ body{
 
 .skill-card{
     background:rgba(30,41,59,0.6);
-
     border:1px solid rgba(255,255,255,0.1);
-
     padding:30px;
-
     text-align:center;
-
     border-radius:20px;
-
-    backdrop-filter:blur(10px);
-
     transition:0.4s;
 }
 
@@ -212,13 +177,9 @@ body{
 
 .project-card{
     background:rgba(30,41,59,0.7);
-
     border-radius:20px;
-
     padding:30px;
-
     border:1px solid rgba(255,255,255,0.1);
-
     transition:0.4s;
 }
 
@@ -236,51 +197,29 @@ body{
 
 .contact-form{
     max-width:700px;
-
     margin:auto;
-
     display:flex;
-
     flex-direction:column;
-
     gap:20px;
 }
 
 .contact-form input,
 .contact-form textarea{
     padding:18px;
-
     border:none;
-
     border-radius:12px;
-
     background:#1e293b;
-
     color:white;
-
-    font-size:1rem;
 }
 
 .contact-form button{
     padding:18px;
-
     border:none;
-
     border-radius:12px;
-
     background:linear-gradient(135deg,#38bdf8,#0ea5e9);
-
     color:black;
-
     font-weight:600;
-
     cursor:pointer;
-
-    transition:0.4s;
-}
-
-.contact-form button:hover{
-    box-shadow:0 0 20px #38bdf8;
 }
 
 .contact-info{
